@@ -10,3 +10,10 @@ func GetMax(x, y int) int {
 	}
 	return y
 }
+
+func Fibonacci() {
+	if n <= 1 {
+		return n
+	}
+
+}
