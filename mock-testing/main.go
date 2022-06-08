@@ -18,14 +18,14 @@ type FullTimeEmployee struct {
 	Person
 }
 
-func GetPersonByDNI(dni string)(Person, error) {
+var GetPersonByDNI = func(dni string)(Person, error) {
 	time.Sleep(5 * time.Second)
 	// SELECT * FROM Persona Where ... (Imagina que aca viene una sentencia de este estilo.)
 	return Person{}, nil
 }
 
-func GetEmployeeById(id int) (Employee, error) {
-	time.Sleep.Second
+var GetEmployeeById = func(id int) (Employee, error) {
+	time.Sleep(5 * time.Second)
 	// SELECT * FROM Employee Where ... (Imagina que aca viene una sentencia de este estilo.)
 	return Employee{}, nil
 }
@@ -47,5 +47,3 @@ ftEmployee.Person = p
 
 return ftEmployee, nil
 }
-
-
